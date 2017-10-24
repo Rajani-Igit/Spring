@@ -17,6 +17,7 @@ public class AopTest {
 		Calculator cal=(Calculator)factory.getProxy();
 		cal.sub(20, 5);
 		cal.add(20, 5);
+		System.out.println("Testing");
 	}
 
 }
