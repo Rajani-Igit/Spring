@@ -2,7 +2,7 @@ package com.configautowire.annotations;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-@Component
+
 public class Transmitter {
     @Value("320Mhz")
 	private String type;

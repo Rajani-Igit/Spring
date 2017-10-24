@@ -7,15 +7,15 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan({"com.configautowire.annotations"})
 @Configuration
 public class JavaConfig {
-/*
+
 	@Bean(name="javatransmitter")
 	public Transmitter transmitter(){
 		
 		return new Transmitter();
-	}*/
+	}
 	@Bean(name="radio",autowire=Autowire.BY_TYPE)
 	public Radio radio(){
-		
+		System.out.println();
 		return new Radio();
 	}
 }
