@@ -12,7 +12,7 @@ public class AopTest {
 		ProxyFactory factory=new ProxyFactory();
 		LogingAdvice advice=new LogingAdvice();
 		Calculator target=new Calculator();
-		factory.addAdvice(advice);
+		factory.addAdvice(advice);;
 		factory.setTarget(target);
 		Calculator cal=(Calculator)factory.getProxy();
 		cal.sub(20, 5);
